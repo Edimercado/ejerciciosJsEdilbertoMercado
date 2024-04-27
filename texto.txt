@@ -1,0 +1,3 @@
+Buenas tardes , no pude resolver la 7ma , se que la resolvieron en clase pero la idea no era replicar lo que hicieron 
+
+en la mayoria de respuestas me falto usar método de cadena :(, pero di con la resolucion del problema.
