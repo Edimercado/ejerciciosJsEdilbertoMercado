@@ -1,363 +1,267 @@
-/*console.log("Ejercicio 1 ----------");
+/*console.log("ejercicio 1 ---------");
+let num= parseInt(prompt("Ingrese un numero "))
 
-let num1 = parseFloat (prompt ("escriba un numero:"))
-let num2 = parseFloat (prompt ("escriba un numero:"))
-
-if (num1 > num2) {
-    console.log("el primer numero es mayor que el segundo");   
-}else{
-    console.log("el primer numero no es mayor que el segundo");
-}
-
-console.log("Ejercicio 2 ----------");
-let numero1 = parseFloat (prompt ("escriba un numero:"))
-let numero2 = parseFloat (prompt ("escriba un numero:"))
-
-if (numero1 === numero2) {
-    console.log("el primer numero es igual al segundo numero digitado");
+for (let i = 0; i <= 10; i++) {
+    console.log(num + "X" + i+ "="+ num*i );
     
-}else{
-    console.log("el primer numero es diferente al segundo numero digitado");
-}
+}*/
 
-console.log("Ejercicio 3----------");
-let number1 = parseFloat (prompt ("escriba un numero:"))
-let number2 = parseFloat (prompt ("escriba un numero:"))
+/*
 
-if (number1 === number2) {
-    console.log("los dos numeros digitados son iguales");   
-}
-else if(number1>number2) {
-    console.log("el primer numero digitado es mas grande que el segundo");  
-}else{
-    console.log("el segundo numero digitado es mas grande que el primero ");  
-}
+console.log("ejercicio 2---------");
 
-console.log("Ejercicio 4----------");
-let primerNum= parseFloat (prompt ("escriba un numero:"))
-let segundoNum= parseFloat (prompt ("escriba un numero:"))
-let tercerNum= parseFloat (prompt ("escriba un numero:"))
+let suma = 0
+console.log("ingrese un numero que quiera que se vaya acumulando , si digita 0 se terminara el proceso");
 
+for (let i = 0; i < 15; i++) {
+    let number= parseInt(prompt("ingrese numero aqui"))
 
-
-if (primerNum <= segundoNum && primerNum<= tercerNum) {
-    console.log("El primer número es el más chico: " + primerNum);
-} else if (segundoNum <= primerNum && segundoNum <= tercerNum) {
-    console.log("El segundo número es el más chico: " + segundoNum);
-} else {
-    console.log("El tercer número es el más chico: " + tercerNum);
-}
-
-console.log("Ejercicio 5----------");
-let persona1 = {
-    nombre: "Juan",
-    edad: 30,
-    altura: 175
-};
-
-let persona2 = {
-    nombre: "María",
-    edad: 25,
-    altura: 162
-};
-
-if (persona1.altura > persona2.altura) {
-    console.log("la primera persona es mas alta que la segunda persona" );
-}else if (persona2.altura > persona1.altura) {
-    console.log(persona2.nombre + " es la persona más alta.");
-} else {
-    console.log("Ambas personas tienen la misma altura.");
-}
-
-if (persona1.edad > persona2.edad) {
-    console.log("la primera persona tiene mas edad que la segunda persona" );
-}else if (persona2.edad > persona1.edad) {
-    console.log("la primera persona tiene menos edad que la segunda persona");
-} else {
-    console.log("Ambas personas tienen la misma edad.");
-}
-
-console.log("Ejercicio 6----------");
-
-let persona = {
-    nombre : "Edilberto",
-    edad : 27,
-    altura : 173,
-    vision : 8
-
-}
-
-if (persona.edad > 17 && persona.altura > 150 && persona.vision >= 8) {
-    console.log("Persona capacitada para conducir");
-}else{
-    console.log("Persona no capacitada para conducir");
-}
-
-console.log("Ejercicio 7----------")
-
-
-
-let nombre1 = prompt("ingrese su nombre:")
-let paseVipONormal = prompt("ingrese VIP o NORMAL si tiene pase VIP o normal :")
-
-
-if (nombre1=== "EDILBERTO" || paseVipONormal=== "VIP") {
-    console.log("BIENVENIDO!!!");
-} else if let (utilizarEntrada) = prompt ("desea utilizar entrada SI/NO"){
-    
-    if (utilizarEntrada === "SI") {
-        console.log("BIENVENIDO!!!");
-        
-    }else {
-        console.log("HASTA PRONTO!!!");
+    if (number === 0) {
+        console.log("se termino la acumulacion");    
     }
-}
+    console.log("la suma total es " + (suma += number));
 
-console.log("Ejercicio 8----------");
-
-let numeroIncognita = 8
-let numeroIngresado = parseInt(prompt("ingrese un numero: "))
-
-
-
-
-if (numeroIncognita === numeroIngresado) {
-    console.log("ADIVINASTE!!!");
-} else if (numeroIncognita > numeroIngresado) {
-    console.log("el numero que ingresaste es menor");
-    let numeroIngresado1 = parseInt(prompt("ingrese un numero: "))
-
-    if (numeroIngresado1 === numeroIncognita) {
-        console.log("ADIVINASTE!!!");
-    } else if (numeroIncognita > numeroIngresado1) {
-        console.log("el numero que ingresaste es menor");
-
-        let numeroIngresado2 = parseInt(prompt("ingrese un numero: "))
-
-        if (numeroIngresado2 === numeroIncognita) {
-            console.log("ADIVINASTE!!!");
-        } else if (numeroIncognita > numeroIngresado2) {
-            console.log("el numero que ingresaste es menor, PERDISTE");
-
-        } else {
-            console.log("el numero que ingresaste es mayor, PERDISTE");
-
-        }
-    } else {
-        console.log("el numero que ingresaste es mayor");
-
-        let numeroIngresado2 = parseInt(prompt("ingrese un numero: "))
-
-        if (numeroIngresado2 === numeroIncognita) {
-            console.log("ADIVINASTE!!!");
-        } else if (numeroIncognita > numeroIngresado2) {
-            console.log("el numero que ingresaste es menor, PERDISTE");
-
-        } else {
-            console.log("el numero que ingresaste es mayor, PERDISTE");
-
-        }
-
-    }
-
-
-} else {
-    console.log("el numero que ingresaste es mayor");
-    let numeroIngresado1 = parseInt(prompt("ingrese un numero: "))
-    if (numeroIngresado1 === numeroIncognita) {
-        console.log("ADIVINASTE!!!");
-    } else if (numeroIncognita > numeroIngresado1) {
-        console.log("el numero que ingresaste es menor");
-
-        let numeroIngresado2 = parseInt(prompt("ingrese un numero: "))
-
-        if (numeroIngresado2 === numeroIncognita) {
-            console.log("ADIVINASTE!!!");
-        } else if (numeroIncognita > numeroIngresado2) {
-            console.log("el numero que ingresaste es menor, PERDISTE");
-
-        } else {
-            console.log("el numero que ingresaste es mayor, PERDISTE");
-
-        }
-    } else {
-        console.log("el numero que ingresaste es mayor");
-        let numeroIngresado2 = parseInt(prompt("ingrese un numero: "))
-
-        if (numeroIngresado2 === numeroIncognita) {
-            console.log("ADIVINASTE!!!");
-        } else if (numeroIncognita > numeroIngresado2) {
-            console.log("el numero que ingresaste es menor, PERDISTE");
-
-        } else {
-            console.log("el numero que ingresaste es mayor,PERDISTE");
-
-        }
-
-    }
-}
-
-
-
-console.log("Ejercicio 9----------")
-
-let edad9 = parseInt(prompt("ingresa tu edad:"))
-
-if (edad9 >= 0 && edad9 <= 12 ) {
-    console.log("Eres un infante: ");
     
-}else if (edad9 >= 13 && edad9 <= 18 ) {
-    console.log("Eres un adolescente: ");
-}else if (edad9 >= 19 && edad9 <= 45 ) {
-    console.log("Eres un mayor joven: ");
-}else if (edad9 > 45 && edad9 <= 100 ) {
-    console.log("Eres un anciano: ");
-}else{
-    console.log("En realidad tienes esa edad?");
-}
-
-
-console.log("Ejercicio 10----------")
-
-
-let jugador1 = prompt("Ingrese PIEDRA/PAPEL/TIJERA")
-let jugador2 = prompt("Ingrese PIEDRA/PAPEL/TIJERA")
-
-if (
-    (jugador1 === "PIEDRA" && jugador2 === "PAPEL") ||
-    (jugador1 === "PAPEL" && jugador2 === "TIJERA") ||
-    (jugador1 === "TIJERA" && jugador2 === "PIEDRA")
-) {
-    console.log("¡Jugador 2 gana!");
-} else if (
-    (jugador1 === "PAPEL" && jugador2 === "PIEDRA") ||
-    (jugador1 === "TIJERA" && jugador2 === "PAPEL") ||
-    (jugador1 === "PIEDRA" && jugador2 === "TIJERA")
-) {
-    console.log("¡Jugador 1 gana!");
-} else if (jugador1 == jugador2) {
-    console.log("¡EMPATE!");
-} else {
-    console.log("¡UNO DE LOS JUGADORES HA HECHO TRAMPA!");
-}
-
-
-
-console.log("Ejercicio 11----------")
-
-let color = prompt("ingresa un color")
-
-switch (color) {
-    case "blanco":
-    case "negro":
-        console.log("falta de color");
-
-        break;
-    case "verde":
-        console.log("el color de la naturaleza");
-
-        break;
-    case "azul":
-        console.log("el color del agua");
-
-        break;
-    case "amarillo":
-        console.log("el color del sol");
-
-        break;
-    case "rojo":
-        console.log("el color del fuego");
-
-        break;
-    case "marron":
-        console.log("el color de la tierra");
-
-        break;
-
-
-    default:
-        console.log("excelente eleccion, no lo teniamos pensado");
-        break;
-}
-
-
-console.log("Ejercicio 12----------")
-
-let valorUno = parseInt(prompt("ingrese un valor"))
-let valorDos = parseInt(prompt("ingrese otro valor"))
-let operacion = prompt("ingrese 1- para suma 2- para resta 3- para multiplicacion 4- para division")
-
-switch (operacion) {
-    case "1":
-        let resultado1 = valorUno + valorDos
-        console.log(" el resultado de esta suma es " + resultado1);
-        break;
-
-    case "2":
-        let resultado2 = valorUno - valorDos
-        console.log(" el resultado de esta resta es " + resultado2);
-        break;
-
-    case "3":
-        let resultado3 = valorUno * valorDos
-        console.log(" el resultado de esta multiplicacion es " + resultado3);
-        break;
-
-    case "4":
-        let resultado4 = valorUno / valorDos
-
-        if (valorUno == 0) {
-            console.log(" ERROR , divisor ingresado es 0 ");
-
-        } else {
-            console.log(" el resultado de esta division es " + resultado4);
-        }
-        break;
-
-
-
-    default:
-        console.log("Operación no válida");
-        break;
-}
-
-console.log("Ejercicio 13----------")
-
-console.log("Ingrese los datos de su Documento Nacional de Identidad (DNI):");
-
-let numeroDNI = prompt("Número de DNI:");
-let nombre = prompt("Nombre:");
-let apellido = prompt("Apellido:");
-let fechaNacimiento = prompt("Fecha de nacimiento (DD/MM/AAAA):");
-let lugarNacimiento = prompt("Lugar de nacimiento:");
-let fechaExpedicion = prompt("Fecha de expedición (DD/MM/AAAA):");
-
-
-console.log("Datos ingresados:");
-console.log("Número de DNI: " + numeroDNI);
-console.log("Nombre: " + nombre);
-console.log("Apellido: " + apellido);
-console.log("Fecha de nacimiento: " + fechaNacimiento);
-console.log("Lugar de nacimiento: " + lugarNacimiento);
-console.log("Fecha de expedición: " + fechaExpedicion);
-
-
-let confirmacion = prompt("¿Los datos ingresados son correctos? (SI/NO)").toUpperCase();
-
-if (confirmacion === "SI") {
-    let dni = {
-        numeroDNI: numeroDNI,
-        nombre: nombre,
-        apellido: apellido,
-        fechaNacimiento: fechaNacimiento,
-        lugarNacimiento: lugarNacimiento,
-        fechaExpedicion: fechaExpedicion,
-       
-    };
-    
-    console.log("Registro exitoso. Datos del DNI:");
-    console.table(dni);
-} else {
-    console.log("Vuelva a intentarlo en 1 mes.");
 }
 */
+/*
+console.log("ejercicio 3---------");
+
+let numAdivinar = 13
+
+for (let i = 0; i < 100; i++) {
+    let numeroIngresado= parseInt(prompt(" ingrese un numero del 1 al 100 y adivina cuantos ejercicios fueron del tema pasado"))
+    if (numeroIngresado === 13) {
+        console.log("Acertaste en el intento numero " + (i+1));
+        
+    }else if (numeroIngresado > 13) {
+        console.log("el numero ingresado es mayor al numero por adivinar, llevas " + (i+1) + " intento(s)");
+        
+    }else{
+        console.log("el numero ingresado es menor al numero por adivinar, llevas " + (i+1) + " intento(s)");
+    }    
+}
+
+*/
+
+/*
+console.log("ejercicio 4---------");
+
+
+let numero = parseInt(prompt("ingrese un numero"))
+
+if (numero <= 1) {
+    console.log("El número no es primo");
+} else {
+    let numeroEsPrimo = true;
+    for (let i = 2; i <= Math.sqrt(numero); i++) {
+        if (numero % i === 0) {
+            numeroEsPrimo = false;
+            break;
+        }
+    }
+    if (numeroEsPrimo) {
+        console.log("El número es primo");
+    } else {
+        console.log("El número no es primo");
+    }
+}
+*/
+/*
+console.log("ejercicio 5---------");
+
+let numero = parseInt(prompt("Ingrese un número para mostrar todos sus divisores:"));
+
+if (isNaN(numero)) {
+    console.log("Por favor, ingrese un número válido.");
+} else {
+    console.log("Los divisores de " + numero + " son:");
+    for (let i = 1; i <= numero / 2; i++) {
+       
+        if (numero % i === 0) {
+            console.log(i);
+        }
+    }
+    console.log(numero);
+}
+
+*/
+/*
+console.log("ejercicio 6---------");
+
+let array = ["a","b","c","d","e","f","g","h","i","j"];
+console.log("los elementos del arreglo son:");
+
+for (let i = 0; i < array.length; i++) {
+    console.log(array[i]);
+    
+}
+*/
+
+/*
+console.log("ejercicio 7---------");
+
+let array = [1,2,3,4,5,6,7,8,9,10];
+console.log("los elementos del arreglo son:");
+
+for (let i = 0; i < array.length; i++) {
+    console.log((array[i]*2));
+    
+}
+*/
+/*
+console.log("ejercicio 8---------");
+
+let grupoFamiliar =[
+{nombre: "edwin", ocupacion: "estudiante", edad: 27 , relacion:"primo"},
+{nombre: "luisa", ocupacion: "doctora", edad: 35 , relacion:"tia"},
+{nombre: "carmen", ocupacion: "docente", edad: 55 , relacion:"madre"},
+{nombre: "leo", ocupacion: "conductor", edad: 56 , relacion:"padre"},
+{nombre: "Rosa", ocupacion: "estudiante", edad: 7 , relacion:"hija"}
+]
+for (let i = 0; i < grupoFamiliar.length; i++) {
+    let mensaje = "hola mi nombre " +grupoFamiliar[i].nombre+ " soy " +grupoFamiliar[i].ocupacion+ " tengo " +grupoFamiliar[i].edad+ " años y soy el/la " +grupoFamiliar[i].relacion+ " de la familia."  ;
+console.log(mensaje);
+}
+
+*/
+/*
+
+console.log("ejercicio 9---------");
+
+
+let array = [1,2,3,4,5,6,7,8,9,10];
+
+console.log("los numeros impares del arreglo son:");
+
+for (let i = 0; i < array.length; i++) {
+   if (array[i]%2 !==0) {
+    console.log(array[i]);
+    
+   }
+}
+*/
+/*
+console.log("ejercicio 10---------");
+
+
+let sumaPares = 0;
+let sumaImpares = 0;
+
+
+while (true) {
+    
+    let numero = parseInt(prompt("Ingrese un número (0 para salir):"));
+
+    
+    if (numero === 0) {
+        break; 
+    }
+
+    
+    if (numero % 2 === 0) {
+        
+        sumaPares += numero;
+    } else {
+        
+        sumaImpares += numero;
+    }
+}
+
+
+console.log("La suma de los números pares es: " + sumaPares);
+console.log("La suma de los números impares es: " + sumaImpares);
+*/
+
+/*
+console.log("ejercicio 11---------");
+
+
+let numeros = [4, 7, 2, 10, 8, 5, 9, 3, 6, 1];
+
+let numeroMasGrande = numeros[0]; 
+
+
+for (let i = 1; i < numeros.length; i++) {
+    
+    if (numeros[i] > numeroMasGrande) {
+       
+        numeroMasGrande = numeros[i];
+    }
+}
+
+
+console.log("El número más grande es:", numeroMasGrande);
+*/
+/*
+console.log("ejercicio 12---------");
+
+
+let numeros = [4, 7, 2, 10, 8, 5, 9, 3, 6, 1];
+
+let numeroMasChico = numeros[0]; 
+
+
+for (let i = 1; i < numeros.length; i++) {
+    
+    if (numeros[i] < numeroMasChico) {
+       
+        numeroMasChico = numeros[i];
+    }
+}
+
+
+console.log("El número más chico es:", numeroMasChico);
+*/
+/*
+console.log("ejercicio 13---------");
+
+let nombreJugador1 = prompt("Escriba su nombre jugador 1")
+let nombreJugador2 = prompt("Escriba su nombre jugador 2")
+let empate = true
+
+
+while (true) {
+    let piedraPapelTijera1 = prompt(nombreJugador1+" escoja entre piedra/papel/tijera")
+let piedraPapelTijera2 = prompt(nombreJugador2+" escoja entre piedra/papel/tijera")
+    
+
+if (piedraPapelTijera1=== "piedra" && piedraPapelTijera2=== "tijera" || piedraPapelTijera1=== "tijera" && piedraPapelTijera2==="papel" || piedraPapelTijera1=== "papel" && piedraPapelTijera2==="piedra") {
+    console.log(nombreJugador1+ " ha ganado!!!");
+    break
+    
+}else if (piedraPapelTijera2=== "piedra" && piedraPapelTijera1=== "tijera" || piedraPapelTijera2=== "tijera" && piedraPapelTijera1=== "papel" || piedraPapelTijera2=== "papel" && piedraPapelTijera1=== "piedra") {
+    console.log(nombreJugador2+ " ha ganado!!!");
+    break
+    
+}else{
+    console.log("Empate !!!");
+    empate= true
+}
+}
+*/
+/*
+console.log("ejercicio 14---------");
+
+let asterisco = " * ";
+
+for (let i = 0; i < 10; i++) {
+    console.log(asterisco);
+    asterisco += " * ";
+}
+*/
+
+
+/*
+console.log("ejercicio 15---------");
+
+for (let i = 5; i > 0; i--) {
+    console.log(" * ".repeat(i));
+}
+*/
+
+
+    
+    
+
+
