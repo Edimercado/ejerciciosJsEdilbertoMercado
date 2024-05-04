@@ -24,25 +24,25 @@ for (let i = 0; i < 15; i++) {
     
 }
 */
-/*
+
 console.log("ejercicio 3---------");
 
 let numAdivinar = 13
+let numeroIngresado = parseInt(prompt("adivine el numero"))
+ 
 
-for (let i = 0; i < 100; i++) {
-    let numeroIngresado= parseInt(prompt(" ingrese un numero del 1 al 100 y adivina cuantos ejercicios fueron del tema pasado"))
-    if (numeroIngresado === 13) {
-        console.log("Acertaste en el intento numero " + (i+1));
-        
-    }else if (numeroIngresado > 13) {
-        console.log("el numero ingresado es mayor al numero por adivinar, llevas " + (i+1) + " intento(s)");
-        
-    }else{
-        console.log("el numero ingresado es menor al numero por adivinar, llevas " + (i+1) + " intento(s)");
-    }    
-}
+do {if (numAdivinar>numeroIngresado) {
+    console.log("numero ingresado es menor");
+     numeroIngresado = parseInt(prompt("adivine el numero"))
 
-*/
+}else{
+    console.log("numero ingresado es mayor");
+     numeroIngresado = parseInt(prompt("adivine el numero"))
+
+} 
+} while (numAdivinar!=numeroIngresado);
+
+console.log("adivinaste!!!");
 
 /*
 console.log("ejercicio 4---------");
