@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: rgb(88, 88, 52);
+}
+
+.nota {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.nota h3 {
+    margin: 0 0 5px;
+}
+
+.input-container {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+#titulo {
+    width: 30vw;
+
+}
+
+#texto {
+    width: 30vw;
+}
+
+#botonGuardar {
+    width: 30vw;
+}
+
+#botonLimpiar {
+    width: 30vw;
+}
+
+#inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+#guardarLimpiar{
+    display: flex;
+    flex-direction: column;
+}

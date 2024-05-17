@@ -17,21 +17,23 @@
 // })
 
 
-let pesoColombianoInput = document.getElementById("pesoColombiano")
-let dolarEstadounidenseInput = document.getElementById("dolar")
+// let pesoColombianoInput = document.getElementById("pesoColombiano")
+// let dolarEstadounidenseInput = document.getElementById("dolar")
 
-pesoColombianoInput.addEventListener("input",function () {
-    let pesoColombiano = parseFloat(pesoColombianoInput.value);
-    let dolarEstadounidense=pesoColombiano/3893.79;
+// pesoColombianoInput.addEventListener("input",function () {
+//     let pesoColombiano = parseFloat(pesoColombianoInput.value);
+//     let dolarEstadounidense=pesoColombiano/3893.79;
 
-    dolarEstadounidenseInput.value = dolarEstadounidense.toFixed(2);
+//     dolarEstadounidenseInput.value = dolarEstadounidense.toFixed(2);
     
-});
+// });
 
-dolarEstadounidenseInput.addEventListener("input",function () {
-    let dolarEstadounidense = parseFloat(dolarEstadounidenseInput.value);
-    let pesoColombiano=dolarEstadounidense*3893.79;
+// dolarEstadounidenseInput.addEventListener("input",function () {
+//     let dolarEstadounidense = parseFloat(dolarEstadounidenseInput.value);
+//     let pesoColombiano=dolarEstadounidense*3893.79;
 
-    pesoColombianoInput.value = pesoColombiano.toFixed(2);
+//     pesoColombianoInput.value = pesoColombiano.toFixed(2);
     
-})
+// })
+
+
